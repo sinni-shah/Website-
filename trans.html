@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+width: 300px;
+height: 100px;
+background-color: blue;
+border: 1px solid black;
+}
+#myDiv{
+-webkit-transform: rotateY(150deg);/*Safari*/
+transform: rotateY(300deg);/*Standard syntax*/
+}
+#myDiv2{
+-webkit-transform: rotateZ(90deg);/*Safari*/
+transform: rotateY(90deg);/*Standard syntax*/
+}
+#myDiv1{
+-webkit-transform: rotateY(150deg);/*Safari*/
+transform: rotateY(150deg);/*Standard syntax*/
+}
+</style>
+</head>
+<body>
+<div>
+this is normal div
+</div>
+<div id="myDiv">
+this div is for y-axis rotation
+</div>
+<div id="myDiv1">
+this div is for x-axis rotation
+</div>
+<div id="myDiv2">
+this div is for z-axis rotation
+</div>
+<p><b>Note:</b>Internet explorer 9 (and earlier versions) does noit support the rotateY() method.</p>
+</body>
+</html>
